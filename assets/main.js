@@ -17,6 +17,7 @@ const generate = document.getElementById('calcola').addEventListener("click", fu
     const etaPasseggero = Number(document.getElementById('age').value);
     console.log(etaPasseggero);
 
+
     if (kmPercorrere == 0 || nomePasseggero == "" ) {
         alert = ("Uno o più elementi da lei inseriti non sono accettati.Riprova");
     } else {
@@ -34,9 +35,22 @@ const generate = document.getElementById('calcola').addEventListener("click", fu
         // Calcolo il prezzo finale
         let prezzoFinale = prezzoScontato;
 
+        // Opzioni per l'offerta
+        const offerte = ["Standard", "Economica", "Prima Classe", "Seconda Classe"];
+        const indiceCasualita = Math.floor(Math.random() * 4); // in questo modo si genera un numero da 0 a 3(perchè parte da 0)
+        const offertaCasuale = offerte[indiceCasualita];
+
+        // Genero numeri casuali per Offerta, Carrozza e il Codice CP
+       
+        const carrozzaCasuale = Math.floor(Math.random() * 10) + 1; // 
+        const codiceCPCasuale = Math.floor(Math.random() * 100000); // 6 numeri
+
         // Aggiorno i dettagli nel biglietto del passeggero
         document.getElementById("nome_passeggero").textContent = nomePasseggero;
         document.getElementById("costo_biglietto").textContent = prezzoFinale.toFixed(2) + " €";
+        document.getElementById("offerta").textContent = offertaCasuale;
+        document.getElementById("carrozza").textContent = carrozzaCasuale;
+        document.getElementById("codice_cp").textContent = codiceCPCasuale;
     }
 });
 
