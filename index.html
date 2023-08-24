@@ -1,69 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
 
     <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
 
-    
-<div class="input_form">
-    <label for="name">Qual é il tuo nome?</label>
-    <input type="text" id="name" placeholder="Nome">
-    
-    <label for="km">Quanti chilometri vuoi percorrere?</label>
-    <input type="text" id="km" placeholder="Chilometri">
-    
-    <label for="age">Quanti anni hai?</label>
-    <input type="text" id="age" placeholder="Età">
-    
-    <button id="calcola">Calcola</button>
-    <button>Annulla</button>
-</div>
+    <div class="container">
+        <div class="input_form">
+            <label for="name">Qual é il tuo nome?</label>
+            <input type="text" id="name" placeholder="Nome">
 
-<h1>IL TUO BIGLIETTO</h1>
-  <h2 style="color: red;">Dettagli importanti per il vostro viaggio</h2>
+            <label for="km">Quanti chilometri vuoi percorrere?</label>
+            <input type="text" id="km" placeholder="Chilometri">
 
-  <div class="ticket">
+            <label for="age">Quanti anni hai?</label>
+            <input type="text" id="age" placeholder="Età">
 
-    
-    <div class="ticket-box">
-      <h3>Nome Passeggero</h3>
-      <p id="nome_passeggero"></p>
+        </div>
+
+        <div class="buttons-ticket">
+            <button id="calcola">Genera</button>
+            <button>Annulla</button>
+        </div>
     </div>
-    
-    <div class="ticket-box">
-      <h3>Offerta</h3>
-      <p id="offerta"></p>
+
+    <h1>IL TUO BIGLIETTO</h1>
+    <h2 style="color: red;">Dettagli importanti per il vostro viaggio</h2>
+
+    <div class="container">
+        <div class="ticket">
+
+
+            <div class="ticket-box" style="background-color: rgb(80, 235, 170);">
+                <h3>Nome Passeggero</h3>
+                <hr>
+                <p id="nome_passeggero"></p>
+            </div>
+           
+            <div class="ticket-box">
+                <h3>Offerta</h3>
+                <hr>
+                <p id="offerta"></p>
+            </div>
+
+            <div class="ticket-box" style="background-color: rgb(80, 235, 170);">
+                <h3>Carrozza</h3>
+                <hr>
+                <p id="carrozza"></p>
+            </div>
+
+            <div class="ticket-box">
+                <h3>Codice CP</h3>
+                <hr>
+                <p id="codice_cp"></p>
+            </div>
+
+            <div class="ticket-box" style="background-color: rgb(80, 235, 170);">
+                <h3>Costo Biglietto</h3>
+                <hr>
+                <p id="costo_biglietto"></p>
+            </div>
+        </div>
     </div>
-    
-    <div class="ticket-box">
-      <h3>Carrozza</h3>
-      <p id="carrozza"></p>
-    </div>
-    
-    <div class="ticket-box">
-      <h3>Codice CP</h3>
-      <p id="codice_cp"></p>
-    </div>
-    
-    <div class="ticket-box">
-      <h3>Costo Biglietto</h3>
-      <p id="costo_biglietto"></p>
-    </div>
-  </div>
 
 
 
 
 
-    <h1 id="costo_ticket"></h1>
-    
-    
+
+
+
     <script src="assets/main.js"></script>
 </body>
+
 </html>

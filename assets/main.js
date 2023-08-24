@@ -43,7 +43,7 @@ const generate = document.getElementById('calcola').addEventListener("click", fu
         // Genero numeri casuali per Offerta, Carrozza e il Codice CP
        
         const carrozzaCasuale = Math.floor(Math.random() * 10) + 1; // 
-        const codiceCPCasuale = Math.floor(Math.random() * 100000); // 6 numeri
+        const codiceCPCasuale = Math.floor(Math.random() * 1000000); // 6 numeri
 
         // Aggiorno i dettagli nel biglietto del passeggero
         document.getElementById("nome_passeggero").textContent = nomePasseggero;
