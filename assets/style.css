@@ -7,15 +7,18 @@
 body {
     background-color: rgb(122, 189, 244);
     text-align: center;
+    
 }
 
 h1,h2{
     color:black;
+    margin-bottom:20px;
 }
 
 .input_form {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .input_form input,
